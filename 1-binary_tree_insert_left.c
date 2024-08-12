@@ -2,12 +2,11 @@
 
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 {
+  /* alloc for node */
+  binary_tree_t *new_node = malloc(sizeof(binary_tree_t));
   /* return null on failure */
   if (parent == NULL)
     return (NULL);
-  /* alloc for node */
-  binary_tree_t *new_node = malloc(sizeof(binary_tree_t));
-
   /* sets value of node */
   new_node->n = value;
   /* sets the parent of the node */
