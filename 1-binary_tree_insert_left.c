@@ -17,14 +17,12 @@ binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
   new_node->left = NULL;
   new_node->right = NULL;
   /* if theres already a left child */
-  if (parent->left != NULL)
+  if (new_node->left != NULL)
   {
-  /* change the parent of the existing left child */
-    parent->left->parent = new_node;
-  /* set the left child to existing left child */
-    new_node->left = parent->left;
+  /* changes node of the existing left child */
+    new_node->left->parent = new_node;
   }
-  /* set the left child of parent */
-  parent->left = new_node;
+  /* set the left child of node */
+  node->right = NULL;
   return (new_node);
 }
