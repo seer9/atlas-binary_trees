@@ -5,7 +5,7 @@
    *
    * Return: Depth of the node starting from 0
    **/
-  size_t binary_tree_depth(const binary_trees_t *tree)
+  size_t binary_tree_depth(const binary_tree_t *tree)
   {
       size_t depth = 0;
     
