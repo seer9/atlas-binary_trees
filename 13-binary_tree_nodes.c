@@ -1,5 +1,4 @@
 #include "binary_trees.h"
-
 /**
  * binary_tree_nodes - creates an array of nodes
  * @tree: pointer to the root node of the tree
